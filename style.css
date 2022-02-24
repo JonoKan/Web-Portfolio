@@ -226,3 +226,21 @@ button {
   border: none;
   color: white;
 }
+.get-in-touch {
+  padding: 100px 0;
+}
+.get-in-touch p {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+.email {
+  text-align: center;
+  font-size: 30px;
+  margin: 5px 0px;
+  padding: 20px;
+  font-weight: 300;
+  border: solid white 1px;
+  box-sizing: border-box;
+}
