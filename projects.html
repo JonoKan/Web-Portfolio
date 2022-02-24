@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f623e2dcd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="project-body">
+      <div class="heading">
+        <h1>Proj</h1>
+        <h1 id="bold">ects</h1>
+      </div>
+      <div class="projects-container">
+        <div class="all-projects">
+          <div class="project-1">
+            <h3>Web Portfolio (2022)</h3>
+            <hr />
+            <button onclick="showMore('project1')" class="button">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+          <div class="project-2">
+            <h3>Hangman (2022)</h3>
+            <hr />
+            <button onclick="showMore('project2')" class="button">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+          <div class="project-3">
+            <h3>Quacker (2021)</h3>
+            <hr />
+            <button onclick="showMore('project3')" class="button">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="focused-project">
+          <section id="web-portfolio">
+            <img
+              id="project-image"
+              src="https://images.unsplash.com/photo-1504892612018-159ffa1d147f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            />
+            <div class="project-details">
+              <ul class="languages" id="project-languages">
+                <li>HTML</li>
+                <li>css</li>
+                <li>javaScript</li>
+              </ul>
+              <hr />
+              <p id="project-description">
+                A web portfolio I made after learning HTML, CSS and JavaScript
+                to test my skills and to be productive during the holidays.
+                Going through and coding the website was extremely fun and was
+                an eye-opener to the numerous online resources that were
+                available to help my achieve my design. The initial layout was
+                designed on Figma with the help of Francis Lee.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
