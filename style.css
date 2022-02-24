@@ -51,7 +51,9 @@ body {
   font-weight: 700;
 }
 
-.about-me-content {
+.about-me-content p {
+  padding: 5px 0;
+  font-size: 16px;
 }
 .about-me-content img {
   width: 100%;
@@ -60,4 +62,29 @@ body {
 }
 .about-me-content h3 {
   margin-top: 10px;
+}
+.arrow {
+  border: solid #d73939;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.projects-link {
+  margin-top: 35px;
+}
+.about-me-content a {
+  font-size: 14px;
+  color: white;
+  border-style: solid;
+  border-color: #d73939;
+  border-width: 1px;
+  padding: 7.5px 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
 }
