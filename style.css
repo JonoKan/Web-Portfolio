@@ -83,6 +83,51 @@
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+.toggle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  z-index: 1;
+}
+.toggle-on {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-menu ul {
+  position: relative;
+}
+.toggle-menu li {
+  padding: 10px;
+  list-style: none;
+}
+.toggle-menu ul li a {
+  color: white;
+  font-family: "Biryani";
+  font-size: 16px;
+  font-weight: 300;
+}
+.toggle-menu ul li a:hover {
+  padding: 10px 15px;
+  border: solid #d73939 1px;
+}
 .projects-link {
   margin-top: 35px;
 }
