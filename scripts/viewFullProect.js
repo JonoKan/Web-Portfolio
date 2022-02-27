@@ -29,5 +29,3 @@ const showMore = (project) => {
     });
     prjDesc.innerHTML = projectDets[project].text;
 }
-
-
