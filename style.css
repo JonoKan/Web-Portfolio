@@ -133,35 +133,35 @@
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(-35px, -35px);
 }
+
 .toggle-menu {
   position: fixed;
   top: 0;
-  left: 100%;
-  width: 200px;
+  right: 100%;
+  width: 250px;
   height: 100vh;
   display: block;
-  transition: -0.5s ease-in;
-  background-color: #000000;
-  z-index: 0;
-}
-.toggle-menu.toggle-menu.is-active {
-  left: 0;
+  background-color: #1d2231;
+  padding-top: 45vh;
 }
 .toggle-menu a {
   display: block;
   width: 100%;
   text-align: center;
-  padding: 8px 12px;
+  padding: 12px 14px;
   text-decoration: none;
   color: white;
+  font-family: "Biryani";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
 }
 .toggle-menu.is-active {
   left: 0;
 }
 .toggle-menu a:hover {
-  padding: 10px 15px;
   border: solid #d73939 1px;
-  background-color: #181716;
+  background-color: #0d1323;
 }
 .projects-link {
   margin-top: 35px;
