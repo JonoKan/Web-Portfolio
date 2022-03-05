@@ -4,8 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .about-me-body {
-  background: rgb(69, 73, 85);
   background: linear-gradient(
     160deg,
     rgba(69, 73, 85, 1) 0%,
@@ -15,12 +15,12 @@
   height: 100vh;
   width: 100vw;
   padding: 15vh 14vw;
+  padding-left: calc(14vw + 250px);
   font-family: "Biryani";
 }
 .about-me-container {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  height: 100%;
+  grid-template-columns: minmax(400px, 2fr) minmax(300px, 3fr);
   column-gap: 5vw;
 }
 .name-container {
@@ -53,9 +53,7 @@
 .about-me-content a {
   font-size: 14px;
   color: white;
-  border-style: solid;
-  border-color: #d73939;
-  border-width: 1px;
+  border: solid 1px #d73939;
   padding: 7.5px 100px;
   text-decoration: none;
   text-transform: uppercase;
@@ -73,15 +71,28 @@
 .about-me-content h3 {
   margin-top: 10px;
 }
-.arrow {
-  border: solid #d73939;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
+#bold {
+  font-weight: 700;
 }
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+.heading {
+  text-transform: uppercase;
+  color: white;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.heading h1 {
+  font-weight: 300;
+  display: inline;
+  letter-spacing: 0.2em;
+}
+.projects-link img {
+  width: 20px;
+  height: 20px;
+  object-fit: none;
+}
+.projects-link {
+  margin: 10px 0;
+  width: 100%;
 }
 .menu-btn {
   top: 10px;
@@ -94,6 +105,7 @@
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   z-index: 2;
+  visibility: hidden;
   /* border: 3px solid #fff; */
 }
 .menu-btn__burger {
@@ -113,7 +125,7 @@
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 .menu-btn__burger::before {
   transform: translateY(-12px);
@@ -133,13 +145,12 @@
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(-35px, -35px);
 }
-
 .toggle-menu {
   position: fixed;
   top: 0;
-  right: 100%;
+  left: 0;
   width: 250px;
-  height: 100vh;
+  height: 100%;
   display: block;
   background-color: #454955;
   padding-top: 45vh;
@@ -160,17 +171,10 @@
   font-weight: 400;
   letter-spacing: 0.15em;
 }
-.toggle-menu.is-active {
-  left: 0;
-}
 .toggle-menu a:hover {
   background-color: #d73939;
 }
-.projects-link {
-  margin-top: 35px;
-}
 .project-body {
-  background: rgb(69, 73, 85);
   background: linear-gradient(
     160deg,
     rgba(69, 73, 85, 1) 0%,
@@ -182,26 +186,13 @@
   padding: 5vh 10vw 15vh 10vw;
   font-family: "Biryani";
 }
-#bold {
-  font-weight: 700;
-}
-.heading {
-  text-transform: uppercase;
-  color: white;
-  font-size: 24px;
-  padding-bottom: 10px;
-}
-.heading h1 {
-  font-weight: 300;
-  display: inline;
-  letter-spacing: 0.2em;
-}
 .projects-container {
   display: grid;
   grid-template-columns: 3fr 4fr;
   height: 100%;
   column-gap: 5vw;
 }
+
 .all-projects {
   display: grid;
   grid-template-rows: 2fr 2fr 2fr;
@@ -359,4 +350,18 @@ button {
 }
 .socials a {
   margin-right: 40px;
+}
+@media (max-width: 768px) {
+  .menu-btn {
+    visibility: visible;
+    cursor: default;
+  }
+  .about-me-body {
+    padding: 5vh 2vw;
+  }
+  .about-me-container {
+  }
+  .toggle-menu {
+    display: none;
+  }
 }
