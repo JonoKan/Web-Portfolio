@@ -12,7 +12,4 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
     toggleMenu.classList.toggle('is-active');
   }
-  if (toggleMenu.classList.contains('is-active') && mediaQuery.matches){
-   toggleMenu.classList.toggle('is-active');
-  }
 }); 
