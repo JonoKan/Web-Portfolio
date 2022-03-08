@@ -21,7 +21,6 @@ const projectDets = {
     text:"Ever wanted to be unproductive? This Chrome extension was made during a hackathon with a group 6 other friends. The extension changes the default curson into a duck we designed. The initial click on a website deemed productive changes the duck into an angry duck which will grow with each click until the duck covers the screen. On unproductive sites the cursor will change to a happy duck and will grow smaller until the default size. Making this extension was extremely fun and beneficial as it helped me to begin understanding JavaScript and APIs and also helped me to network with fellow Computer Science and Software Engineering student"
     }
 }
-
 const renderProject = () => {
     const projectClass = document.querySelector('.all-projects');
     Object.entries(projectDets).forEach(([key, value]) => {
