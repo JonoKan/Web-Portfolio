@@ -3,8 +3,8 @@ const projectDets = {
         name: "Web Portfolio",
         class: "project-1",
         image:"https://images.unsplash.com/photo-1504892612018-159ffa1d147f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80", 
-        lang:["HTML","CSS","JavaScript","Figma"], 
-        text:"A web portfolio I made after learning HTML, CSS and JavaScript to test my skills and to be productive during the holidays. Going through and coding the website was extremely fun and was an eye-opener to the numerous online resources that were available to help my achieve my design. The initial layout was designed on Figma with the help of Francis Lee."
+        lang:["HTML","CSS","JavaScript"], 
+        text:"A responsive web portfolio I made after learning HTML, CSS and JavaScript to test my skills and to be productive during the holidays. Going through and coding the website was extremely fun and was an eye-opener to the numerous online resources that were available to help my achieve my design. The initial layout was designed on Figma with the help of Francis Lee."
     },
     project2: {
     name: "Hangman",
